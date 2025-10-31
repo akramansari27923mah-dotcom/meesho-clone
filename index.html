@@ -1,0 +1,965 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>meesho</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.7.0/fonts/remixicon.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="image/favicon.ico">
+    <link rel="stylesheet" href="src/output.css">
+
+    <style>
+        @keyframes bounceX {
+            100% {
+                transform: translateX(-1300px);
+            }
+
+            /* 50% { transform: translateX(120px); } */
+        }
+
+        .font-poppins {
+            font-family: 'Poppins', sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="lg:h-[19vh] h-[13vh] lg:w-[100%] w-[100%]  sticky top-0 bg-white z-20">
+        <nav
+            class="lg:flex lg:justify-center lg:items-center  lg:h-[11vh] h-[8vh] flex justify-center itemce gap-x-5   border-gray-300">
+            <div class="lg:flex lg:gap-x-2 flex justify-center items-center ">
+                <div class="hidden lg:block ">
+                    <img class="w-[13vw]   cursor-pointer" src="image/meeshoLogo.svg" alt="">
+                </div>
+                <div class="lg:flex flex justify-center items-center cursor-pointer">
+                    <img class="w-6 relative left-10 " src="image/search.svg" alt="search">
+                    <input type="type"
+                        class="border lg:placeholder:w-[20rem] lg:placeholder:text-[15px] placeholder:text-[10px]  border-gray-600 lg:pr-[20rem] lg:pl-11 pl-11  font-semibold rounded-[5px] outline-none py-2 "
+                        placeholder="Try Saree,Kurti or Search by Product Code">
+                </div>
+            </div>
+            <!-- become a suppiler -->
+            <div class="flex items-center gap-x-5">
+                <div>
+                    <p class="hidden lg:block text-gray-900 text-[16px] cursor-pointer">Become a<br>Suppiler</p>
+                </div>
+                <div class=" hidden lg:block mb-3 ml-3">
+                    <p class="text-5xl font-extralight">|</p>
+                </div>
+                <div>
+                    <p class="text-gray-900 text-[16px] cursor-pointer hidden lg:block">Investor<br>Relations</p>
+                </div>
+                <div class="hidden lg:block mb-3 ml-4">
+                    <p class="text-5xl font-extralight">|</p>
+                </div>
+                <!-- profile or card -->
+                <div class="lg:flex lg:items-center lg:justify-center lg:gap-x-10 lg:ml-5 flex mr-6 gap-x-5">
+                    <div id="pro" class="flex items-center flex-col cursor-pointer">
+                        <img class="w-6" src="image/profile.svg" alt="">
+                        <p>Profile</p>
+                    </div>
+                    <div class="flex items-center flex-col mt-1 cursor-pointer">
+                        <img class="w-5" src="image/card.svg" alt="">
+                        <p>Card</p>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!-- nav second -->
+        <div
+            class="  overflow-auto [scrollbar-width:none] [-ms-overflow-style:none] [&::-webkit-scrollbar]:hidden  m-auto w-[90%]">
+            <div id="all-para" class="flex text-nowrap pt-2 gap-x-4  justify-center items-center">
+                <div class="hover:text-blue-800">
+                    <p class=" cursor-pointer ">Women Ethnic</p>
+                    <span class="font-extrabold hidden ">_______________</span>
+                </div>
+                <div class="hover:text-blue-800">
+                    <p class=" cursor-pointer">Women Western</p>
+                    <span class="font-extrabold hidden">__________________</span>
+                </div>
+                <div class="hover:text-blue-800 ">
+                    <p class=" cursor-pointer">Men</p>
+                    <span class="font-extrabold hidden">_____</span>
+                </div>
+                <div class="hover:text-blue-800">
+                    <p class=" cursor-pointer">Kids</p>
+                    <span class="font-extrabold hidden">_____</span>
+                </div>
+                <div class="hover:text-blue-800">
+                    <p class=" cursor-pointer">Home & Kitchen</p>
+                    <span class="font-extrabold hidden">__________________</span>
+                </div>
+                <div class="hover:text-blue-800">
+                    <p class=" cursor-pointer">Beauty & Health</p>
+                    <span class="font-extrabold hidden">__________________</span>
+                </div>
+                <div class="hover:text-blue-800">
+                    <p class=" cursor-pointer">Jewellery & Accessories</p>
+                    <span class="font-extrabold hidden">_________________________</span>
+                </div>
+                <div class="hover:text-blue-800">
+                    <p class=" cursor-pointer">Bags & Footwear</p>
+                    <span class="font-extrabold hidden">___________________</span>
+                </div>
+                <div class="hover:text-blue-800">
+                    <p class=" cursor-pointer">Electronics</p>
+                    <span class="font-extrabold hidden">___________</span>
+                </div>
+                <div class="hover:text-blue-800">
+                    <p class=" cursor-pointer">Sports & Fitness</p>
+                    <span class="font-extrabold hidden">__________________</span>
+                </div>
+                <div class="hover:text-blue-800">
+                    <p class=" cursor-pointer">Car & Motorbike</p>
+                    <span class="font-extrabold hidden">__________________</span>
+                </div>
+                <div class="hover:text-blue-800">
+                    <p class=" cursor-pointer">Office Supplies & Stationery</p>
+                    <span class="font-extrabold hidden">______________________________</span>
+                </div>
+                <div class="hover:text-blue-800">
+                    <p class=" cursor-pointer">Pet Supplies</p>
+                    <span class="font-extrabold hidden">______________</span>
+                </div>
+                <div class="hover:text-blue-800">
+                    <p class=" cursor-pointer">Food & Drinks</p>
+                    <span class="font-extrabold hidden">________________</span>
+                </div>
+                <div class="hover:text-blue-800">
+                    <p class=" cursor-pointer">Musical Instruments</p>
+                    <span class="font-extrabold hidden">______________________</span>
+                </div>
+                <div class="hover:text-blue-800">
+                    <p class=" cursor-pointer">Books</p>
+                    <span class="font-extrabold hidden">________</span>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class=" lg:w-[100%] lg:h-[60vh] w-[100%]  h-[13vh] bg-[url('/image/main.jpg')] 
+    lg:bg-cover mt-[3px] bg-contain bg-no-repeat relative">
+        <div class="lg:absolute lg:top-[7rem] lg:right-30 absolute right-5 top-6   flex flex-col lg:gap-y-4">
+            <p class="lg:text-3xl lg:font-bold text-[13px] text-white">Smart Shopping</p>
+            <p class="lg:text-3xl lg:font-bold text-[13px] text-white">Trusted by Millions</p>
+            <div class="lg:mt-6 mt-3">
+                <a class="bg-white lg:px-6 px-3 py-2 rounded-2xl text-[12px] lg:rounded-[7px] lg:py-4 lg:text-2xl text-purple-900 cursor-pointer">Shop Now</a>
+            </div>
+        </div>
+    </main>
+    <!-- gift -->
+    <section class="bg-pink-200  lg:px-3 lg:py-3 px-2 py-2  ">
+        <div class="flex justify-center items-center border-1 rounded-[8px] bg-white lg:py-2 py-1 gap-x-2 lg:gap-x-8">
+            <div class="flex justify-center items-center">
+                <img class="w-6" src="image/returns.svg" alt="">
+                <p class="lg:text-[14px] text-[13px] text-black text-nowrap">7 Days Easy Return</p>
+            </div>
+            <div>
+                <p class="opacity-10">|</p>
+            </div>
+            <div class="flex justify-center items-center">
+                <img class="w-6" src="image/lowest-price.svg" alt="">
+                <p class="lg:text-[14px] text-[13px] text-black text-nowrap">Cash on Delivery</p>
+            </div>
+            <div>
+                <p class="opacity-10">|</p>
+            </div>
+            <div class="flex justify-center items-center">
+                <img class="w-6" src="image/cod.svg" alt="">
+                <p class="lg:text-[14px] text-[13px] text-black text-nowrap">Lowest Prices</p>
+            </div>
+        </div>
+    </section>
+    <section
+        class="lg:h-[35vh] h-[10vh]   flex items-center justify-center overflow-auto [scrollbar-width:none] [-ms-overflow-style:none] [&::-webkit-scrollbar]:hidden  lg:mx-10">
+        <div
+            class="lg:flex lg:justify-center lg:items-center lg:gap-x-5 flex justify-center items-center gap-x-2 w-[100%]">
+            <div class="hover:mb-1 ">
+                <img class=" hidden lg:block transition-transform duration-600 hover:-translate-y-2" src="image/img-1.jpg" alt="">
+                <img class=" lg:hidden w-[250px] transition-transform duration-600 hover:-translate-y-2" src="image/img-1.jpg" alt="">
+            </div>
+            <div class="hover:mb-2">
+                <img class="hidden lg:block transition-transform duration-600 hover:-translate-y-2" src="image/img-2.jpg" alt="">
+                <img class="lg:hidden w-[250px] transition-transform duration-600 hover:-translate-y-2" src="image/img-2.jpg" alt="">
+            </div>
+            <div class="hover:mb-2">
+                <img class="hidden lg:block transition-transform duration-600 hover:-translate-y-2" src="image/img-3.jpg" alt="">
+                <img class="lg:hidden w-[250px] transition-transform duration-600 hover:-translate-y-2" src="image/img-3.jpg" alt="">
+            </div>
+            <div class="hover:mb-2">
+                <img class="hidden lg:block transition-transform duration-600 hover:-translate-y-2" src="image/img-4.jpg" alt="">
+                <img class=" lg:hidden w-[250px] transition-transform duration-600 hover:-translate-y-2" src="image/img-4.jpg" alt="">
+            </div>
+            <div class="hover:mb-2">
+                <img class="hidden lg:block transition-transform duration-600 hover:-translate-y-2" src="image/img-5.jpg" alt="">
+                <img class="lg:hidden w-[250px] transition-transform duration-600 hover:-translate-y-2" src="image/img-5.jpg" alt="">
+            </div>
+            <div class="hover:mb-2">
+                <img class="hidden lg:block transition-transform duration-600 hover:-translate-y-2" src="image/img-6.jpg" alt="">
+                <img class="lg:hidden  transition-transform duration-600 hover:-translate-y-2" src="image/img-6.jpg" alt="">
+            </div>
+            <div class="hover:mb-2">
+                <img class="hidden lg:block transition-transform duration-600 hover:-translate-y-2" src="image/img-7.jpg" alt="">
+                <img class="lg:hidden  transition-transform duration-600 hover:-translate-y-2" src="image/img-7.jpg" alt="">
+            </div>
+            <div class="hover:mb-2">
+                <img class="hidden lg:block transition-transform duration-600 hover:-translate-y-2" src="image/img-8.jpg" alt="">
+                <img class="lg:hidden w-[250px]  transition-transform duration-600 hover:-translate-y-2" src="image/img-8.jpg" alt="">
+            </div>
+            <div class="hover:mb-2">
+                <img class="hidden lg:block transition-transform duration-600 hover:-translate-y-2" src="image/img-9.jpg" alt="">
+                <img class="lg:hidden w-[250px] transition-transform duration-600 hover:-translate-y-2" src="image/img-9.jpg" alt="">
+            </div>
+            <div class="hover:mb-2">
+                <img class="hidden lg:block transition-transform duration-600 hover:-translate-y-2" src="image/img-9.jpg" alt="">
+              
+            </div>
+        </div>
+    </section>
+    <!-- main - 2  -->
+    <section class="bg-[url('/image/main-2.jpg')] lg:w-[100%] lg:h-[90vh]  h-[19vh] lg:bg-cover bg-contain bg-no-repeat lg:relative relative">
+        <div class="lg:absolute lg:bottom-15 lg:left-[18rem] absolute bottom-3 left-20 ">
+            <a class="text-amber-100 lg:px-8 lg:py-3 lg:text-[20px] text-[10px] px-2
+            py-1  bg-orange-950 rounded-[7px] border-1 border-amber-100" href="">Shop
+                now</a>
+        </div>
+        <!-- mein - 2 image -->
+        <div class="flex flex-col lg:absolute lg:right-50 lg:top-30 lg:gap-y-18 gap-y-3 absolute right-8  top-5">
+            <div class="flex lg:gap-x-18 gap-x-5">
+                <img class="lg:w-[7rem] w-[3rem] cursor-pointer  transition-transform duration-600 hover:-translate-y-2"
+                    src="image/sadhi.jpg" alt="">
+                <img class="lg:w-[7rem] w-[3rem] cursor-pointer transition-transform duration-600 hover:-translate-y-2"
+                    src="image/menwear.jpg" alt="">
+            </div>
+            <div class="flex lg:gap-x-18 gap-x-5">
+                <img class="lg:w-[7rem] w-[3rem] cursor-pointer transition-transform duration-600 hover:-translate-y-2"
+                    src="image/red-sadhi.jpg" alt="">
+                <img class="lg:w-[7rem] w-[3rem] cursor-pointer transition-transform duration-600 hover:-translate-y-2"
+                    src="image/jewellery.jpg" alt="">
+            </div>
+        </div>
+    </section>
+    <!-- orignal brand -->
+    <section class="lg:h-[68vh] h-[20vh]">
+        <div class="flex justify-between items-center w-[90%] m-auto lg:mt-18 mt-3">
+            <div class="flex justify-center items-center gap-x-2">
+                <p class="lg:text-3xl text-[15px]">Original Brands</p>
+                <img src="image/populer.svg" alt="">
+            </div>
+            <div>
+                <div class="flex justify-center items-center gap-x-2">
+                    <p id="view-all" class="lg:text-[18px] text-purple-900 cursor-pointer">VIEW ALL</p>
+                    <img id="arrow" class="w-6 cursor-pointer" src="image/arrow.svg" alt="">
+                </div>
+            </div>
+        </div>
+
+        <!--orignal brand > image -->
+        <div class="flex  w-[90%] m-auto mt-13 gap-x-6">
+            <div>
+                <img class="cursor-pointer" src="image/img-2-1.jpg" alt="">
+            </div>
+            <div>
+                <img class="cursor-pointer" src="image/img-2-2.jpg" alt="">
+            </div>
+            <div>
+                <img class="cursor-pointer" src="image/img-2-3.jpg" alt="">
+            </div>
+            <div>
+                <img class="cursor-pointer" src="image/img-2-4.jpg" alt="">
+            </div>
+            <div>
+                <img class="cursor-pointer" src="image/img-2-5.jpg" alt="">
+            </div>
+        </div>
+    </section>
+
+    <!-- nivea-->
+
+    <section class="lg:h-[25vh] h-[18vh] bg-[#f0e9ff] flex justify-center items-center overflow-hidden">
+        <div class="flex justify-center items-center gap-x-8 animate-[bounceX_20s_ease-in-out_infinite]">
+            <div
+                class="w-[200px] h-[100px] bg-white rounded-[5px]  bg-[url('/image/nivya.jpg')] bg-contain bg-no-repeat  bg-center ">
+
+            </div>
+            <div
+                class=" w-[200px] h-[100px] rounded-[5px] bg-white  bg-[url('/image/hemalya.jpg')] bg-contain bg-no-repeat bg-center ">
+
+            </div>
+            <div
+                class=" w-[200px] h-[100px] rounded-[5px] bg-[url('/image/mi.jpg')] bg-no-repeat bg-white  bg-center bg-[length:80px_60px] ">
+
+            </div>
+            <div
+                class=" w-[200px] h-[100px] rounded-[5px] bg-white  bg-[url('/image/beta.jpg')] bg-contain bg-no-repeat bg-center ">
+
+            </div>
+            <div
+                class=" w-[200px] h-[100px] rounded-[5px] bg-white  bg-[url('/image/wow.jpg')] bg-contain bg-no-repeat bg-center ">
+
+            </div>
+            <div
+                class=" w-[200px] h-[100px] rounded-[5px] bg-white  bg-[url('/image/wild.jpg')] bg-contain bg-no-repeat bg-center ">
+
+            </div>
+            <div
+                class="w-[200px] h-[100px] rounded-[5px] bg-white  bg-[url('/image/plom.jpg')] bg-contain bg-no-repeat bg-center ">
+
+            </div>
+        </div>
+    </section>
+
+    <!-- main 3 -->
+    <div class="bg-[url('/image/main-3.jpg')] lg:h-[60vh] h-[13vh] w-[100%] lg:bg-cover bg-contain bg-no-repeat relative">
+        <div class="lg:absolute lg:bottom-17 lg:left-14 absolute bottom-3 left-5">
+            <a class="lg:text-2xl text-[10px] font-medium lg:px-7 px-2 py-1  lg:py-2 bg-white rounded-[10px] hover:bg-gray-100" href="#">Download
+                Now</a>
+        </div>
+        <div class="flex justify-center items-center lg:absolute lg:top-[20%] lg:right-[9%] absolute right-4 top-2 lg:gap-x-7 gap-x-3">
+            <div
+                class="flex flex-col justify-center items-center gap-y-2 transition-transform duration-400 hover:-translate-y-2">
+                <img class="lg:w-[150px] w-[50px]" src="image/main-3-1.jpg" alt="">
+                <a class=" lg:text-[15px] text-[8px]  lg:px-8 lg:py-1 px-2 py-[5px] bg-gray-200 font-medium text-pink-950 rounded-[10px] border-amber-500 border"
+                    href="">Dhanteras</a>
+            </div>
+            <div
+                class="flex flex-col justify-center items-center gap-y-2 transition-transform duration-400 hover:-translate-y-2">
+                <img class="lg:w-[150px] w-[50px]" src="image/main-3-2.jpg" alt="">
+                <a class=" lg:text-[15px] text-[8px] lg:px-12 lg:py-1 px-4 py-[5px] bg-gray-200 font-medium text-pink-950 rounded-[10px] border-amber-500 border"
+                    href="">Diwali</a>
+            </div>
+            <div
+                class="flex flex-col justify-center items-center gap-y-2 transition-transform duration-400 hover:-translate-y-2">
+                <img class="lg:w-[150px] w-[50px]" src="image/main-3-3.jpg" alt="">
+                <a class=" lg:text-[15px] text-[8px]  lg:px-8 lg:py-1 px-2 py-[5px] bg-gray-200 font-medium text-pink-950 rounded-[10px] border-amber-500 border"
+                    href="">Bhai Dooj</a>
+            </div>
+            <div
+                class="flex flex-col justify-center items-center gap-y-2 transition-transform duration-400 hover:-translate-y-2">
+                <img class="lg:w-[150px] w-[50px]" src="image/main.3-4.jpg" alt="">
+                <a class=" lg:text-[15px] text-[8px]  lg:px-6 lg:py-1 px-1 py-[5px] bg-gray-200 font-medium text-pink-950 rounded-[10px] border-amber-500 border"
+                    href="">Chhat pooja</a>
+            </div>
+        </div>
+    </div>
+    <!-- card -->
+    <section id="card"
+        class=" hidden w-[200px] h-[230px]  shadow-sm border-[1px] border-gray-200  rounded-bl-[5px] rounded-br-[5px] shadow-gray-200  top-[70px] fixed right-17 bg-white z-30">
+        <div>
+            <div class="ml-2 mt-3">
+                <p class="text-black font-medium">Hello User</p>
+            </div>
+            <div class="ml-2 mt-2">
+                <p class="text-[11px]">To access your Meesho account</p>
+            </div>
+            <div class="ml-2 mt-5">
+                <a class="px-15 text-white rounded-[5px] py-3 bg-pink-800" href=""> Sing Up</a>
+            </div>
+            <hr class="mt-6 w-[90%] ml-2">
+        </div>
+        <div class="flex mt-3 gap-x-5 ml-2 cursor-pointer">
+            <i class="ri-briefcase-fill"></i>
+            <p class="font-medium">My Order</p>
+        </div>
+        <hr class="mt-5 w-[90%] ml-2">
+        <div class="ml-4 mt-2 cursor-pointer">
+            <p class="font-medium">Delete Account</p>
+        </div>
+    </section>
+    <!-- shop -->
+
+    <section class="">
+        
+        <div class="lg:p-12  lg:ml-6 p-5 ">
+             <div class="lg:hidden md:hidden flex items-center gap-x-10">
+            <i class=" ham ri-menu-line"></i>
+            <p class="text-4xl">Products For You</p>
+        </div>
+            <p class="text-4xl hidden lg:block relative">Products For You</p>
+        </div>
+        <div class="flex justify-center   gap-x-2 ">
+            <!-- left -->
+            <div id="left" class="lg:w-[20%] lg:h-[80%] hidden lg:block      ">
+                <div
+                    class="flex justify-around  items-center border relative border-gray-300 py-1 gap-x-3 rounded-[5px]">
+                    <div>
+                        <p class="text-gray-700 ">Sort by : <span id="spanrevel" class="font-medium">Relevance</span>
+                        </p>
+                    </div>
+                    <div>
+                        <i id="uparrow" class="ri-arrow-up-s-line text-2xl cursor-pointer hidden"></i>
+                        <i id="downarrow" class="ri-arrow-down-s-line text-2xl cursor-pointer"></i>
+                    </div>
+                    <section id="revel"
+                        class="hidden lg:w-[20vw] w-[40vw] lg:h-[40vh] h-[35vh] overflow-hidden overflow-y-scroll shadow shadow-gray-400 absolute top-11 bg-white z-20">
+                        <div class="lg:w-[20vw] w-[40vw] lg:h-[8vh] h-[6vh] bg-pink-200 rounded-bl-[5px] hover:bg-gray-100 cursor-pointer">
+                            <p id="revelp" class="pt-3 pl-4 text-gray-500 text-nowrap">Relevance</p>
+                        </div>
+                        <div class="lg:w-[20vw] w-[40vw] lg:h-[8vh] h-[6vh] hover:bg-gray-100 cursor-pointer">
+                            <p id="revelp2" class="pt-3 pl-4 text-gray-500 text-nowrap">New Arrivals</p>
+                        </div>
+                        <div class="lg:w-[20vw] w-[40vw] lg:h-[8vh] h-[6vh] hover:bg-gray-100 cursor-pointer">
+                            <p id="revelp3" class="pt-3 pl-4 text-gray-500 text-nowrap">Price (High to Low)</p>
+                        </div>
+                        <div class="lg:w-[20vw] w-[40vw] lg:h-[8vh] h-[6vh] hover:bg-gray-100 cursor-pointer">
+                            <p id="revelp4" class="pt-3 pl-4 text-gray-500 text-nowrap">Price (Low to High)</p>
+                        </div>
+                        <div class="lg:w-[20vw] w-[40vw] lg:h-[8vh] h-[6vh] hover:bg-gray-100 cursor-pointer">
+                            <p id="revelp5" class="pt-3 pl-4 text-gray-500 text-nowrap">Ratings</p>
+                        </div>
+                        <div class="lg:w-[20vw] w-[40vw] lg:h-[8vh] h-[6vh] hover:bg-gray-100 cursor-pointer">
+                            <p id="revelp6" class="pt-3 pl-4 text-gray-500 text-nowrap">Discount</p>
+                        </div>
+                    </section>
+                </div>
+                <div class="border border-gray-300 mt-4 rounded-[10px] ">
+                    <div class="mt-3 ml-4">
+                        <p class="font-medium ">FILTERS</p>
+                    </div>
+                    <div class=" ml-3">
+                        <p class="text-[11px] font-medium text-gray-700 ml-1">1000+ Products</p>
+                    </div>
+                    <hr class="w-[85%] mr-auto ml-4 mt-4 text-gray-500">
+                    <div class="flex justify-between items-center mx-4 mt-3">
+                        <p class="text-[17px] font-medium">Category</p>
+                        <i class="ri-arrow-up-s-line text-2xl"></i>
+                    </div>
+                    <div class="relative mt-4">
+                        <img class="absolute left-8 top-3 " src="image/search.svg" alt="">
+                        <input class="border border-gray-500 rounded-[5px]  pl-10 py-2 ml-5" type="text"
+                            placeholder="search">
+                    </div>
+                    <div>
+                        <div class="flex gap-x-3 ml-4 mt-4">
+                            <input type="checkbox">
+                            <p class="text-gray-600 font-medium">Women T-shirts</p>
+                        </div>
+                        <div class="flex gap-x-3 ml-4 mt-4">
+                            <input type="checkbox">
+                            <p class="text-gray-600 font-medium">Women Tops And Tunics</p>
+                        </div>
+                        <div class="flex gap-x-3 ml-4 mt-4">
+                            <input type="checkbox">
+                            <p class="text-gray-600 font-medium">Bangles & Bracelets</p>
+                        </div>
+                        <div class="flex gap-x-3 ml-4 mt-4">
+                            <input type="checkbox">
+                            <p class="text-gray-600 font-medium">Bedsheets</p>
+                        </div>
+                        <div class="flex gap-x-3 ml-4 mt-4">
+                            <input type="checkbox">
+                            <p class="text-gray-600 font-medium">Bike Covers</p>
+                        </div>
+                        <div class="flex gap-x-3 ml-4 mt-4">
+                            <input type="checkbox">
+                            <p class="text-gray-600 font-medium">Blouses</p>
+                        </div>
+                        <div class="flex gap-x-3 ml-4 mt-4">
+                            <input type="checkbox">
+                            <p class="text-gray-600 font-medium">Bluetooth Headphones</p>
+                        </div>
+                        <div class="flex gap-x-3 ml-4 mt-4">
+                            <input type="checkbox">
+                            <p class="text-gray-600 font-medium">Dresses</p>
+                        </div>
+                        <div class="flex gap-x-3 ml-4 mt-4">
+                            <input type="checkbox">
+                            <p class="text-gray-600 font-medium">Dupatta Sets</p>
+                        </div>
+                        <div class="flex gap-x-3 ml-4 mt-4">
+                            <input type="checkbox">
+                            <p class="text-gray-600 font-medium">Earrings & Studs</p>
+                        </div>
+                        <div class="flex gap-x-3 ml-4 mt-4">
+                            <input type="checkbox">
+                            <p class="text-gray-600 font-medium">Flipflops & Slippers</p>
+                        </div>
+                        <div class="flex gap-x-3 ml-4 mt-4">
+                            <input type="checkbox">
+                            <p class="text-gray-600 font-medium">Gowns</p>
+                        </div>
+                        <div id="show" class="flex justify-center items-center mt-2">
+                            <p class="text-blue-800 cursor-pointer hover:text-blue-900">Show more</p>
+                        </div>
+                        <div class="hidden selects">
+                            <div class="flex gap-x-3 ml-4 mt-4">
+                                <input type="checkbox">
+                                <p class="text-gray-600 font-medium">Hair Accessories</p>
+                            </div>
+                            <div class="flex gap-x-3 ml-4 mt-4">
+                                <input type="checkbox">
+                                <p class="text-gray-600 font-medium">Heels & Sandals</p>
+                            </div>
+                            <div class="flex gap-x-3 ml-4 mt-4">
+                                <input type="checkbox">
+                                <p class="text-gray-600 font-medium">Idols & Figurines</p>
+                            </div>
+                            <div class="flex gap-x-3 ml-4 mt-4">
+                                <input type="checkbox">
+                                <p class="text-gray-600 font-medium">Jeans</p>
+                            </div>
+                            <div class="flex gap-x-3 ml-4 mt-4">
+                                <input type="checkbox">
+                                <p class="text-gray-600 font-medium">Jewellery Set</p>
+                            </div>
+                            <div class="flex gap-x-3 ml-4 mt-4">
+                                <input type="checkbox">
+                                <p class="text-gray-600 font-medium">Kids Toys</p>
+                            </div>
+                            <div class="flex gap-x-3 ml-4 mt-4">
+                                <input type="checkbox">
+                                <p class="text-gray-600 font-medium">Kitchen Tools</p>
+                            </div>
+                            <div class="flex gap-x-3 ml-4 mt-4">
+                                <input type="checkbox">
+                                <p class="text-gray-600 font-medium">Kurta Sets</p>
+                            </div>
+                            <div class="flex gap-x-3 ml-4 mt-4">
+                                <input type="checkbox">
+                                <p class="text-gray-600 font-medium">Kurtis</p>
+                            </div>
+                            <div class="flex gap-x-3 ml-4 mt-4">
+                                <input type="checkbox">
+                                <p class="text-gray-600 font-medium">Lunchbox & Bottles</p>
+                            </div>
+                            <div class="flex gap-x-3 ml-4 mt-4">
+                                <input type="checkbox">
+                                <p class="text-gray-600 font-medium">Mangalsutras</p>
+                            </div>
+                            <div class="flex gap-x-3 ml-4 mt-4">
+                                <input type="checkbox">
+                                <p class="text-gray-600 font-medium">Men Jewellery</p>
+                            </div>
+                            <div class="flex gap-x-3 ml-4 mt-4">
+                                <input type="checkbox">
+                                <p class="text-gray-600 font-medium">Men Shirts</p>
+                            </div>
+                            <div class="flex gap-x-3 ml-4 mt-4">
+                                <input type="checkbox">
+                                <p class="text-gray-600 font-medium">Men T-shirts</p>
+                            </div>
+                            <div class="flex gap-x-3 ml-4 mt-4">
+                                <input type="checkbox">
+                                <p class="text-gray-600 font-medium">Mobile Accessories</p>
+                            </div>
+                            <div class="flex gap-x-3 ml-4 mt-4">
+                                <input type="checkbox">
+                                <p class="text-gray-600 font-medium">Mobile Cases & Covers</p>
+                            </div>
+                            <div class="flex gap-x-3 ml-4 mt-4">
+                                <input type="checkbox">
+                                <p class="text-gray-600 font-medium">Nighties</p>
+                            </div>
+                            <div class="flex gap-x-3 ml-4 mt-4">
+                                <input type="checkbox">
+                                <p class="text-gray-600 font-medium">Pendants & Lockets</p>
+                            </div>
+                            <div class="flex gap-x-3 ml-4 mt-4">
+                                <input type="checkbox">
+                                <p class="text-gray-600 font-medium">Photo Frames</p>
+                            </div>
+                            <div class="flex gap-x-3 ml-4 mt-4">
+                                <input type="checkbox">
+                                <p class="text-gray-600 font-medium">Puja Articles</p>
+                            </div>
+                            <div class="flex gap-x-3 ml-4 mt-4">
+                                <input type="checkbox">
+                                <p class="text-gray-600 font-medium">Rings</p>
+                            </div>
+                            <div class="flex gap-x-3 ml-4 mt-4">
+                                <input type="checkbox">
+                                <p class="text-gray-600 font-medium">Sarees</p>
+                            </div>
+                            <div class="flex gap-x-3 ml-4 mt-4">
+                                <input type="checkbox">
+                                <p class="text-gray-600 font-medium">Shirts</p>
+                            </div>
+                            <div class="flex gap-x-3 ml-4 mt-4">
+                                <input type="checkbox">
+                                <p class="text-gray-600 font-medium">Shoes</p>
+                            </div>
+                            <div class="flex gap-x-3 ml-4 mt-4">
+                                <input type="checkbox">
+                                <p class="text-gray-600 font-medium">Suits & Dress Materials</p>
+                            </div>
+                            <div class="flex gap-x-3 ml-4 mt-4">
+                                <input type="checkbox">
+                                <p class="text-gray-600 font-medium">Sweater And Sweatshirts</p>
+                            </div>
+                            <div class="flex gap-x-3 ml-4 mt-4">
+                                <input type="checkbox">
+                                <p class="text-gray-600 font-medium">T-shirts</p>
+                            </div>
+                            <div class="flex gap-x-3 ml-4 mt-4">
+                                <input type="checkbox">
+                                <p class="text-gray-600 font-medium">Tops And Bottom Sets</p>
+                            </div>
+                            <div class="flex gap-x-3 ml-4 mt-4">
+                                <input type="checkbox">
+                                <p class="text-gray-600 font-medium">Tops And Tunics</p>
+                            </div>
+                            <div class="flex gap-x-3 ml-4 mt-4">
+                                <input type="checkbox">
+                                <p class="text-gray-600 font-medium">Trousers & Pants</p>
+                            </div>
+                            <div class="flex gap-x-3 ml-4 mt-4">
+                                <input type="checkbox">
+                                <p class="text-gray-600 font-medium">Women Bangles & Bracelets</p>
+                            </div>
+                            <div class="flex gap-x-3 ml-4 mt-4">
+                                <input type="checkbox">
+                                <p class="text-gray-600 font-medium">Women Bra</p>
+                            </div>
+                            <div class="flex gap-x-3 ml-4 mt-4">
+                                <input type="checkbox">
+                                <p class="text-gray-600 font-medium">Women Dresses</p>
+                            </div>
+                            <div class="flex gap-x-3 ml-4 mt-4">
+                                <input type="checkbox">
+                                <p class="text-gray-600 font-medium">Women Dupatta Sets</p>
+                            </div>
+                            <div class="flex gap-x-3 ml-4 mt-4">
+                                <input type="checkbox">
+                                <p class="text-gray-600 font-medium">Women Kurta Sets</p>
+                            </div>
+                            <div class="flex gap-x-3 ml-4 mt-4">
+                                <input type="checkbox">
+                                <p class="text-gray-600 font-medium">Women Kurtis</p>
+                            </div>
+                            <div class="flex gap-x-3 ml-4 mt-4">
+                                <input type="checkbox">
+                                <p class="text-gray-600 font-medium">Women Panty & Briefs</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+
+
+            <!-- right -->
+            <div 
+                id="right" class="lg:w-[70%] lg:h-[100%]  lg:flex lg:justify-cent  lg:flex-wrap lg:gap-x-4 lg:gap-y-4 gap-y-3  w-[100%] grid grid-cols-2 ml-2">
+
+
+                <div class="lg:h-[65vh] lg:w-[16vw] w-[200px] h-[400px] border border-gray-300 rounded-[10px] ">
+                    <div class="flex  mx-3 flex-col">
+                        <div>
+                            <img class="h-[240px] w-[185px] object-cover mt-[2px] ml-[2px]" src="image/shop1.jpg"
+                                alt="">
+                        </div>
+                        <div class="mt-2">
+                            <p class=":text-[16px] text-gray-600 font-poppins text-nowrap ">Flawsome Stylus Boys...</p>
+                            <p class="font-medium text-2xl"> &#8377; 201 </p>
+                        </div>
+                        <div>
+                            <div class="mt-3 ">
+                                <a class="px-[8px] py-[5px] text-gray-600 bg-gray-100 rounded-2xl text-[11px]  font-poppins"
+                                    href="">Free Delivery</a>
+                            </div>
+                            <div class="flex items-center gap-x-2 mt-4">
+                                <a class="px-[15px] py-[3px] bg-green-600 rounded-2xl" href="">3.9 </a>
+                                <span class="text-[12px] text-gray-500 font-medium font-poppins ">14417 Reviews</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="lg:h-[65vh] lg:w-[16vw] w-[200px] h-[400px] border border-gray-300 rounded-[10px]">
+                    <div class="flex  mx-3 flex-col">
+                        <div>
+                            <img class="h-[240px] w-[185px] object-cover mt-[2px] ml-[2px]" src="image/shop2.jpg"
+                                alt="">
+                        </div>
+                        <div class="mt-2">
+                            <p class="text-[16px] text-gray-600 font-poppins text-nowrap">Flawsome Stylus Boys...</p>
+                            <p class="font-medium text-2xl"> &#8377; 219 </p>
+                        </div>
+                        <div>
+                            <div class="mt-3 ">
+                                <a class="px-[8px] py-[5px] text-gray-600 bg-gray-100 rounded-2xl text-[11px]  font-poppins"
+                                    href="">Free Delivery</a>
+                            </div>
+                            <div class="flex items-center gap-x-2 mt-4">
+                                <a class="px-[15px] py-[3px] bg-green-600 rounded-2xl" href="">3.9 </a>
+                                <span class="text-[12px] text-gray-500 font-medium font-poppins ">14417 Reviews</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+                <div class="lg:h-[65vh] lg:w-[16vw] w-[200px] h-[400px] border border-gray-300 rounded-[10px]">
+                    <div class="flex  mx-3 flex-col">
+                        <div>
+                            <img class="h-[240px] w-[185px] object-cover mt-[2px] ml-[2px]" src="image/shop2.jpg"
+                                alt="">
+                        </div>
+                        <div class="mt-2">
+                            <p class="text-[16px] text-gray-600 font-poppins text-nowrap">Flawsome Stylus Boys...</p>
+                            <p class="font-medium text-2xl"> &#8377; 219 </p>
+                        </div>
+                        <div>
+                            <div class="mt-3 ">
+                                <a class="px-[8px] py-[5px] text-gray-600 bg-gray-100 rounded-2xl text-[11px]  font-poppins"
+                                    href="">Free Delivery</a>
+                            </div>
+                            <div class="flex items-center gap-x-2 mt-4">
+                                <a class="px-[15px] py-[3px] bg-green-600 rounded-2xl" href="">3.9 </a>
+                                <span class="text-[12px] text-gray-500 font-medium font-poppins ">14417 Reviews</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="lg:h-[65vh] lg:w-[16vw] w-[200px] h-[400px] border border-gray-300 rounded-[10px]">
+                    <div class="flex  mx-3 flex-col">
+                        <div>
+                            <img class="h-[240px] w-[185px] object-cover mt-[2px] ml-[2px]" src="image/shop2.jpg"
+                                alt="">
+                        </div>
+                        <div class="mt-2">
+                            <p class="text-[16px] text-gray-600 font-poppins text-nowrap">Flawsome Stylus Boys...</p>
+                            <p class="font-medium text-2xl"> &#8377; 219 </p>
+                        </div>
+                        <div>
+                            <div class="mt-3 ">
+                                <a class="px-[8px] py-[5px] text-gray-600 bg-gray-100 rounded-2xl text-[11px]  font-poppins"
+                                    href="">Free Delivery</a>
+                            </div>
+                            <div class="flex items-center gap-x-2 mt-4">
+                                <a class="px-[15px] py-[3px] bg-green-600 rounded-2xl" href="">3.9 </a>
+                                <span class="text-[12px] text-gray-500 font-medium font-poppins ">14417 Reviews</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+                <div class="lg:h-[65vh] lg:w-[16vw] w-[200px] h-[400px] border border-gray-300 rounded-[10px]">
+                    <div class="flex  mx-3 flex-col">
+                        <div>
+                            <img class="h-[240px] w-[185px] object-cover mt-[2px] ml-[2px]" src="image/shop2.jpg"
+                                alt="">
+                        </div>
+                        <div class="mt-2">
+                            <p class="text-[16px] text-gray-600 font-poppins text-nowrap">Flawsome Stylus Boys...</p>
+                            <p class="font-medium text-2xl"> &#8377; 219 </p>
+                        </div>
+                        <div>
+                            <div class="mt-3 ">
+                                <a class="px-[8px] py-[5px] text-gray-600 bg-gray-100 rounded-2xl text-[11px]  font-poppins"
+                                    href="">Free Delivery</a>
+                            </div>
+                            <div class="flex items-center gap-x-2 mt-4">
+                                <a class="px-[15px] py-[3px] bg-green-600 rounded-2xl" href="">3.9 </a>
+                                <span class="text-[12px] text-gray-500 font-medium font-poppins ">14417 Reviews</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+                <div class="lg:h-[65vh] lg:w-[16vw] w-[200px] h-[400px] border border-gray-300 rounded-[10px]">
+                    <div class="flex  mx-3 flex-col">
+                        <div>
+                            <img class="h-[240px] w-[185px] object-cover mt-[2px] ml-[2px]" src="image/shop2.jpg"
+                                alt="">
+                        </div>
+                        <div class="mt-2">
+                            <p class="text-[16px] text-gray-600 font-poppins text-nowrap">Flawsome Stylus Boys...</p>
+                            <p class="font-medium text-2xl"> &#8377; 219 </p>
+                        </div>
+                        <div>
+                            <div class="mt-3 ">
+                                <a class="px-[8px] py-[5px] text-gray-600 bg-gray-100 rounded-2xl text-[11px]  font-poppins"
+                                    href="">Free Delivery</a>
+                            </div>
+                            <div class="flex items-center gap-x-2 mt-4">
+                                <a class="px-[15px] py-[3px] bg-green-600 rounded-2xl" href="">3.9 </a>
+                                <span class="text-[12px] text-gray-500 font-medium font-poppins ">14417 Reviews</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+                <div class="lg:h-[65vh] lg:w-[16vw] w-[200px] h-[400px] border border-gray-300 rounded-[10px]">
+                    <div class="flex  mx-3 flex-col">
+                        <div>
+                            <img class="h-[240px] w-[185px] object-cover mt-[2px] ml-[2px]" src="image/shop2.jpg"
+                                alt="">
+                        </div>
+                        <div class="mt-2">
+                            <p class="text-[16px] text-gray-600 font-poppins text-nowrap">Flawsome Stylus Boys...</p>
+                            <p class="font-medium text-2xl"> &#8377; 219 </p>
+                        </div>
+                        <div>
+                            <div class="mt-3 ">
+                                <a class="px-[8px] py-[5px] text-gray-600 bg-gray-100 rounded-2xl text-[11px]  font-poppins"
+                                    href="">Free Delivery</a>
+                            </div>
+                            <div class="flex items-center gap-x-2 mt-4">
+                                <a class="px-[15px] py-[3px] bg-green-600 rounded-2xl" href="">3.9 </a>
+                                <span class="text-[12px] text-gray-500 font-medium font-poppins ">14417 Reviews</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+                <div class="lg:h-[65vh] lg:w-[16vw] w-[200px] h-[400px] border border-gray-300 rounded-[10px]">
+                    <div class="flex  mx-3 flex-col">
+                        <div>
+                            <img class="h-[240px] w-[185px] object-cover mt-[2px] ml-[2px]" src="image/shop2.jpg"
+                                alt="">
+                        </div>
+                        <div class="mt-2">
+                            <p class="text-[16px] text-gray-600 font-poppins text-nowrap">Flawsome Stylus Boys...</p>
+                            <p class="font-medium text-2xl"> &#8377; 219 </p>
+                        </div>
+                        <div>
+                            <div class="mt-3 ">
+                                <a class="px-[8px] py-[5px] text-gray-600 bg-gray-100 rounded-2xl text-[11px]  font-poppins"
+                                    href="">Free Delivery</a>
+                            </div>
+                            <div class="flex items-center gap-x-2 mt-4">
+                                <a class="px-[15px] py-[3px] bg-green-600 rounded-2xl" href="">3.9 </a>
+                                <span class="text-[12px] text-gray-500 font-medium font-poppins ">14417 Reviews</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+
+                <div class="lg:h-[65vh] lg:w-[16vw] w-[200px] h-[400px] border border-gray-300 rounded-[10px]">
+                    <div class="flex  mx-3 flex-col">
+                        <div>
+                            <img class="h-[240px] w-[185px] object-cover mt-[2px] ml-[2px]" src="image/shop2.jpg"
+                                alt="">
+                        </div>
+                        <div class="mt-2">
+                            <p class="text-[16px] text-gray-600 font-poppins text-nowrap">Flawsome Stylus Boys...</p>
+                            <p class="font-medium text-2xl"> &#8377; 219 </p>
+                        </div>
+                        <div>
+                            <div class="mt-3 ">
+                                <a class="px-[8px] py-[5px] text-gray-600 bg-gray-100 rounded-2xl text-[11px]  font-poppins"
+                                    href="">Free Delivery</a>
+                            </div>
+                            <div class="flex items-center gap-x-2 mt-4">
+                                <a class="px-[15px] py-[3px] bg-green-600 rounded-2xl" href="">3.9 </a>
+                                <span class="text-[12px] text-gray-500 font-medium font-poppins ">14417 Reviews</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+                <div class="lg:h-[65vh] lg:w-[16vw] w-[200px] h-[400px] border border-gray-300 rounded-[10px]">
+                    <div class="flex  mx-3 flex-col">
+                        <div>
+                            <img class="h-[240px] w-[185px] object-cover mt-[2px] ml-[2px]" src="image/shop2.jpg"
+                                alt="">
+                        </div>
+                        <div class="mt-2">
+                            <p class="text-[16px] text-gray-600 font-poppins text-nowrap">Flawsome Stylus Boys...</p>
+                            <p class="font-medium text-2xl"> &#8377; 219 </p>
+                        </div>
+                        <div>
+                            <div class="mt-3 ">
+                                <a class="px-[8px] py-[5px] text-gray-600 bg-gray-100 rounded-2xl text-[11px]  font-poppins"
+                                    href="">Free Delivery</a>
+                            </div>
+                            <div class="flex items-center gap-x-2 mt-4">
+                                <a class="px-[15px] py-[3px] bg-green-600 rounded-2xl" href="">3.9 </a>
+                                <span class="text-[12px] text-gray-500 font-medium font-poppins ">14417 Reviews</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+                <div class="lg:h-[65vh] lg:w-[16vw] w-[200px] h-[400px] border border-gray-300 rounded-[10px]">
+                    <div class="flex  mx-3 flex-col">
+                        <div>
+                            <img class="h-[240px] w-[185px] object-cover mt-[2px] ml-[2px]" src="image/shop2.jpg"
+                                alt="">
+                        </div>
+                        <div class="mt-2">
+                            <p class="text-[16px] text-gray-600 font-poppins text-nowrap">Flawsome Stylus Boys...</p>
+                            <p class="font-medium text-2xl"> &#8377; 219 </p>
+                        </div>
+                        <div>
+                            <div class="mt-3 ">
+                                <a class="px-[8px] py-[5px] text-gray-600 bg-gray-100 rounded-2xl text-[11px]  font-poppins"
+                                    href="">Free Delivery</a>
+                            </div>
+                            <div class="flex items-center gap-x-2 mt-4">
+                                <a class="px-[15px] py-[3px] bg-green-600 rounded-2xl" href="">3.9 </a>
+                                <span class="text-[12px] text-gray-500 font-medium font-poppins ">14417 Reviews</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+                <div class="lg:h-[65vh] lg:w-[16vw] w-[200px] h-[400px] border border-gray-300 rounded-[10px]">
+                    <div class="flex  mx-3 flex-col">
+                        <div>
+                            <img class="h-[240px] w-[185px] object-cover mt-[2px] ml-[2px]" src="image/shop2.jpg"
+                                alt="">
+                        </div>
+                        <div class="mt-2">
+                            <p class="text-[16px] text-gray-600 font-poppins text-nowrap">Flawsome Stylus Boys...</p>
+                            <p class="font-medium text-2xl"> &#8377; 219 </p>
+                        </div>
+                        <div>
+                            <div class="mt-3 ">
+                                <a class="px-[8px] py-[5px] text-gray-600 bg-gray-100 rounded-2xl text-[11px]  font-poppins"
+                                    href="">Free Delivery</a>
+                            </div>
+                            <div class="flex items-center gap-x-2 mt-4">
+                                <a class="px-[15px] py-[3px] bg-green-600 rounded-2xl" href="">3.9 </a>
+                                <span class="text-[12px] text-gray-500 font-medium font-poppins ">14417 Reviews</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    </section>
+</body>
+<script src="index.js"></script>
+
+</html>
